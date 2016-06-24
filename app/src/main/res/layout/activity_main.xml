@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.taburet.helloworld.MainActivity">
+
+    <ImageView
+        android:id="@+id/business_image"
+        android:textSize="36sp"
+        android:src="@drawable/tomato"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/business_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_margin="10dp"
+            android:text="Your favorite groceries store" />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/business_name"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="Phone: +7 901 123 45 67"/>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="Neverland, Candy Street, 9000"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+
+            android:textSize="18sp"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="We have all and every possible grocerie
+you might require. Our tomatoes are especially good."/>
+
+    </RelativeLayout>
+
+</LinearLayout>
